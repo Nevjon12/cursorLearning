@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import { AppShell, Burger, Group, Text } from '@mantine/core';
+import { AppShell, Burger, Group, Text, NavLink, Stack } from '@mantine/core';
+import { Outlet, useLocation, Link } from 'react-router-dom';
 
 export function ShellLayout() {
   const [opened, setOpened] = useState(true);
+  const location = useLocation();
 
   return (
     <AppShell
@@ -16,7 +18,6 @@ export function ShellLayout() {
     >
       <AppShell.Header>
         <Group h="100%" px="md" justify="space-between">
-          <Text fw={600}>Header</Text>
           <Burger
             opened={opened}
             onClick={() => setOpened((o) => !o)}
@@ -24,15 +25,36 @@ export function ShellLayout() {
             size="sm"
             aria-label="Toggle sidebar"
           />
+          <Text fw={600}> Cursor Playground Project</Text>
+
         </Group>
       </AppShell.Header>
 
       <AppShell.Navbar p="md">
-        <Text fw={500}>Left sidebar</Text>
+        <Stack gap="xs">
+          <NavLink
+            component={Link}
+            to="/"
+            label="Main"
+            active={location.pathname === '/'}
+          />
+          <NavLink
+            component={Link}
+            to="/faq"
+            label="FAQ"
+            active={location.pathname === '/faq'}
+          />
+          <NavLink
+            component={Link}
+            to="/about-me"
+            label="About Me"
+            active={location.pathname === '/about-me'}
+          />
+        </Stack>
       </AppShell.Navbar>
 
       <AppShell.Main>
-        <Text>Content</Text>
+        <Outlet />
       </AppShell.Main>
     </AppShell>
   );
