@@ -1,15 +1,19 @@
 import '@mantine/core/styles.css';
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider, createTheme } from '@mantine/core';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ShellLayout } from './layouts/ShellLayout';
 import { MainPage } from './pages/MainPage';
 import { FAQPage } from './pages/FAQPage';
 import { AboutMePage } from './pages/AboutMePage';
 
+const theme = createTheme({
+  primaryColor: 'blue',
+});
+
 function App() {
   return (
     <BrowserRouter>
-      <MantineProvider>
+      <MantineProvider theme={theme} forceColorScheme="dark">
         <Routes>
           <Route path="/" element={<ShellLayout />}>
             <Route index element={<MainPage />} />

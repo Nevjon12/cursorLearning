@@ -18,6 +18,10 @@ isProject: false
 
 Implement a simple React layout using Mantine that matches the sketch: a full-width header at the top, a left sidebar, and a main content area to the right.
 
+## UI Theme Requirement
+
+- The application should run in **dark mode exclusively** (no light mode toggle).
+
 ## Approach
 
 - **Use Mantine AppShell**: Leverage Mantine's `AppShell` component to define the header, navbar (left sidebar), and main content regions.
