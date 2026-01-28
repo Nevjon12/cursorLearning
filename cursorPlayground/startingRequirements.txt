@@ -1,0 +1,28 @@
+- [X] Create a new repo in git as the project folder and clone it to your computer.
+- [X] Open Cursor and open the repo folder.
+- [] Look at the getting started docs for Vite and Mantine.
+- [ ] (Optional) Check if Vite or Mantine have AI resources that you can connect to Cursor like skills or whatever. I recommend reviewing the docs but also ask ChatGPT and/or Google if they know anything about this.
+- [X] Tell Cursor you want to setup a React project that uses Vite and Mantine-UI and provide it the documentation for Vite and Mantine. Clarify you want to go over the project at a high level view to review before moving forward. Clarify you do not want it to make any changes until you say so.
+- [X] Review what it comes up with and look at the setup docs from Mantine and Vite just to double check.
+- [-] Have it walk through setting up Vite with you; this should be the out-of-the-box setup from the guide and build via `npm build dev`.
+- [X] Commit the project.
+- [X] Instruct Cursor to verify the process of adding Mantine-UI to your React project and remind it to not make any changes until after you review its game plan.
+- [X] Get Mantine all setup with its React providers and configure it to use dark mode.
+- [X] Commit.
+- [X] Make a basic header, sidebar, content website layout using Mantine's component library like Flex. The styling is not important, just get the layout set up. We can iron this out when you get here.
+
+
+
+Steps taken:
+1. Initialized a basic vite application using *npm create vite* with React framework and TS 
+2. Created an agent in cursor that parses through the Mantine and Vite documentation and used the "Plan" mode to create an md file for reviewing the requirements
+3. Provided the agent instructions on the expected result of the application, providing an image of the layout as context
+4. Reviewed each file generated prior to accepting the changes to make sure nothing was funky
+5. Made the first commit with the bare bones layout of the application.
+6. Created a second agent/chat to provide details on how to set up the routing using "Plan" mode to create an md file for reviewingt the requirements
+7. Reviewed all the generated files and dependencies added to package.json to ensure they matched with what was required. Then Approved
+8. I didnt like where the burger menu was located(It was on the opposite side of where the NavBar would actually pop up). So we adjusted that.
+9. Commited and published the branch
+10. Edited this document to list the steps I took and pushed the final commit before submittinf for review and merging.
+
+
