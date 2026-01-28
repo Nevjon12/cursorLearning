@@ -1,0 +1,21 @@
+- [X] Create a new repo in git as the project folder and clone it to your computer.
+- [X] Open Cursor and open the repo folder.
+- [] Look at the getting started docs for Vite and Mantine.
+- [ ] (Optional) Check if Vite or Mantine have AI resources that you can connect to Cursor like skills or whatever. I recommend reviewing the docs but also ask ChatGPT and/or Google if they know anything about this.
+- [ ] Tell Cursor you want to setup a React project that uses Vite and Mantine-UI and provide it the documentation for Vite and Mantine. Clarify you want to go over the project at a high level view to review before moving forward. Clarify you do not want it to make any changes until you say so.
+- [ ] Review what it comes up with and look at the setup docs from Mantine and Vite just to double check.
+- [ ] Have it walk through setting up Vite with you; this should be the out-of-the-box setup from the guide and build via `npm build dev`.
+- [ ] Commit the project.
+- [ ] Instruct Cursor to verify the process of adding Mantine-UI to your React project and remind it to not make any changes until after you review its game plan.
+- [ ] Get Mantine all setup with its React providers and configure it to use dark mode.
+- [ ] Commit.
+- [ ] Make a basic header, sidebar, content website layout using Mantine's component library like Flex. The styling is not important, just get the layout set up. We can iron this out when you get here.
+
+
+
+Steps taken:
+1. Initialized a basic vite application using *npm create vite* with React framework and TS 
+2. Created an agent in cursor that parses through the Mantine and Vite documentation
+3. Agent provided instructions for properly setting up a playground environment
+
+
