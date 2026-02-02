@@ -50,6 +50,18 @@ export function ShellLayout() {
             label="About Me"
             active={location.pathname === '/about-me'}
           />
+          <NavLink
+            component={Link}
+            to="/profile"
+            label="Profile"
+            active={location.pathname === '/profile'}
+          />
+          <NavLink
+            component={Link}
+            to="/settings"
+            label="Settings"
+            active={location.pathname === '/settings'}
+          />
         </Flex>
       </AppShell.Navbar>
 
