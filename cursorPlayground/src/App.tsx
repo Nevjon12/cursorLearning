@@ -7,6 +7,7 @@ import { FAQPage } from './pages/FAQPage';
 import { AboutMePage } from './pages/AboutMePage';
 import { SettingsPage } from './pages/SettingsPage';
 import { ProfilePage } from './pages/ProfilePage';
+import { DogsPage } from './pages/DogsPage';
 
 const theme = createTheme({
   primaryColor: 'blue',
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ShellLayout />}>
             <Route index element={<MainPage />} />
+            <Route path="dogs" element={<DogsPage />} />
             <Route path="faq" element={<FAQPage />} />
             <Route path="about-me" element={<AboutMePage />} />
             <Route path="profile" element={<ProfilePage />} />

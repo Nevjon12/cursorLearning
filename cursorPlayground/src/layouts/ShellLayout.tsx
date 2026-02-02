@@ -40,6 +40,12 @@ export function ShellLayout() {
           />
           <NavLink
             component={Link}
+            to="/dogs"
+            label="Doggos"
+            active={location.pathname === '/dogs'}
+          />
+          <NavLink
+            component={Link}
             to="/faq"
             label="FAQ"
             active={location.pathname === '/faq'}
