@@ -26,3 +26,13 @@ Steps taken:
 10. Edited this document to list the steps I took and pushed the final commit before submittinf for review and merging.
 
 
+
+Next Stage:
+- Become familiar with Mantine components: Text, Flex, etc. Basically replace all your HTML habits with Mantine 
+- Replace any existing components that may not be Mantine
+
+Then:
+integrate axios. query and format it into a table. Add an action at the end of every row (3 buttons that can open modals to Delete, Update, etc.)
+
+
+

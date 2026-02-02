@@ -1,8 +1,10 @@
+import { Flex, Title, Text } from '@mantine/core';
+
 export function MainPage() {
   return (
-    <div>
-      <h1>Main Page</h1>
-      <p>Welcome to the main page.</p>
-    </div>
+    <Flex component="section" direction="column" gap="md">
+      <Title order={1}>Main Page</Title>
+      <Text>Welcome to the main page.</Text>
+    </Flex>
   );
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AppShell, Burger, Group, Text, NavLink, Stack } from '@mantine/core';
+import { AppShell, Burger, Group, Text, NavLink, Flex } from '@mantine/core';
 import { Outlet, useLocation, Link } from 'react-router-dom';
 
 export function ShellLayout() {
@@ -31,7 +31,7 @@ export function ShellLayout() {
       </AppShell.Header>
 
       <AppShell.Navbar p="md">
-        <Stack gap="xs">
+        <Flex direction="column" gap="xs">
           <NavLink
             component={Link}
             to="/"
@@ -50,7 +50,7 @@ export function ShellLayout() {
             label="About Me"
             active={location.pathname === '/about-me'}
           />
-        </Stack>
+        </Flex>
       </AppShell.Navbar>
 
       <AppShell.Main>
